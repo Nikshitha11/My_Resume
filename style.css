@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1abc9c;
+    color: white;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.resume, .bio-data {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 38%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+}
+
+.right-section1{
+    width: 60%;
+    padding: 20px;
+}
+.left-section1 {
+    width: 40%;
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+}
+
+.right-section {
+    width: 70%;
+    padding: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.profile-image1 img {
+    width: 20%;
+    border-radius: 50%;
+    display:block;
+    margin-right:auto;
+    float: inline-end;
+}
+.m2{
+    float:inline-start;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.job-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e8e8e8;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.section h3{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures no double borders */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Optional: Hover effect for rows */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Optional: Styling for the Education Table */
+.education-table {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the table header */
+.education-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+/* Layout for content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for text section */
+.text-section {
+    width: 70%; /* Adjust width to allow space for the image */
+    text-align: left;
+}
+
+/* Styling for image section */
+.image-section {
+    width: 20%; /* Set image section width */
+}
+
+.profile-image {
+    width: 100%; /* Make image responsive within its container */
+    border-radius: 50%; /* To make it oval or circular */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #20c997;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-section, .image-section {
+        width: 100%;
+        text-align: center;
+    }
+}
